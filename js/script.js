@@ -31,6 +31,13 @@ let pokemonRepository = (function(){
     function add(pokemon){
         pokemonList.push(pokemon);
     }
+
+    return {
+        getAll: getAll,
+        add: add
+    }
+}())
+
     } else {
         document.write("<p>" + pokemonList[i].name + " (height: " + pokemonList[i].height + ")</p>");  
     }
