@@ -28,6 +28,9 @@ let pokemonRepository = (function(){
     }
 ];
 
+    function add(pokemon){
+        pokemonList.push(pokemon);
+    }
     } else {
         document.write("<p>" + pokemonList[i].name + " (height: " + pokemonList[i].height + ")</p>");  
     }
