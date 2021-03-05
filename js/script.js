@@ -1,3 +1,5 @@
+//Creating new pokemonRepository variable to hold pokemonList array within an IIFE
+let pokemonRepository = (function(){
     }
 ];
 
