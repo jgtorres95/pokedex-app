@@ -11,3 +11,12 @@
     transition: 0.2s opacity;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
+
+.select-pokemon:hover,
+.select-pokemon:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+}
+
