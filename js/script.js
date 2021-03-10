@@ -35,6 +35,15 @@ let pokemonRepository = (function(){
         console.log(pokemon.name);
     }
     // Function that adds buttons as list items to '.pokemon-list' for each pokemon in pokemonList. 
+    function addListItem(pokemon){
+        let pokedexList = document.querySelector('.pokemon-list');    
+        let pokemonItem = document.createElement('li');
+        let button = document.createElement('button');
+        button.innerText = pokemon.name;
+        button.classList.add('select-pokemon');
+        pokemonItem.appendChild(button);
+        pokedexList.appendChild(pokemonItem); 
+    }
 
     return {
         getAll: getAll,
