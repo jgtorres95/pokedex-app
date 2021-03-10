@@ -56,10 +56,5 @@ let pokemonRepository = (function(){
 
 // For each loop that iterates over pokemonList array
 pokemonRepository.getAll().forEach(function(pokemon){
-    //Conditional that checks if pokemonList.height is greater than 1
-    if (pokemon.height > 1) {
-        document.write("<p>" + pokemon.name + " (height: " + pokemon.height + ") - Wow, that's big!</p>"); 
-    } else {
-        document.write("<p>" + pokemon.name + " (height: " + pokemon.height + ")</p>");  
-    }
+    pokemonRepository.addListItem(pokemon); 
 })
