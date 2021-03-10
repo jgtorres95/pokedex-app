@@ -22,12 +22,10 @@ let pokemonRepository = (function(){
             type: ['rock', 'ground']
         }
     ];
-    
     // Function that returns pokemonList array.
     function getAll(){
         return pokemonList;
     }
-
     // Function used to add new pokemon to pokemonList
     function add(pokemon){
         pokemonList.push(pokemon);
