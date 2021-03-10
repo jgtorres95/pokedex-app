@@ -1,4 +1,4 @@
-//Creating new pokemonRepository variable to hold pokemonList array within an IIFE
+//Creating new pokemonRepository variable to hold pokemonList array within an IIFE along with a few functions.
 let pokemonRepository = (function(){
     let pokemonList = [
         {
@@ -23,13 +23,17 @@ let pokemonRepository = (function(){
         }
     ];
     
+    // Function that returns pokemonList array.
     function getAll(){
         return pokemonList;
     }
 
+    // Function used to add new pokemon to pokemonList
     function add(pokemon){
         pokemonList.push(pokemon);
     }
+    // Function that logs pokemon.name to the console
+    // Function that adds buttons as list items to '.pokemon-list' for each pokemon in pokemonList. 
 
     return {
         getAll: getAll,
