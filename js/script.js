@@ -32,7 +32,7 @@ let pokemonRepository = (function(){
     }
     // Function that logs pokemon.name to the console
     function showDetails(pokemon){
-        console.log(pokemon.name);
+        console.log(pokemon);
     }
     // Function that adds buttons as list items to '.pokemon-list' for each pokemon in pokemonList. 
     function addListItem(pokemon){
