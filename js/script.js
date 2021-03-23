@@ -1,4 +1,4 @@
-//Creating new pokemonRepository variable to hold pokemonList array within an IIFE along with a few functions.
+//Creating new pokemonRepository variable to hold pokemonList array within an IIFE along with some functions.
 let pokemonRepository = (function(){
     let pokemonList = [];
     let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150'; 
