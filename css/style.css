@@ -19,9 +19,9 @@ body {
 
 .select-pokemon:hover,
 .select-pokemon:focus {
-    /* lets the mouse appear as a hand when hovering over the button */
+    /* let mouse appear as a hand when hovering over the pokemon button */
     cursor: pointer;
-    /* reduces the opacity of the button to 80% */
+    /* reduce opacity */
     opacity: 0.8;
 }
 
