@@ -1,3 +1,8 @@
+html, 
+body {
+  font-family: Arial, sans-serif;
+}
+
 .select-pokemon {
     background-color: #89CFF0;
     border: none;
