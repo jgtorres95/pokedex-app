@@ -16,6 +16,7 @@ img {
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
+    text-transform: capitalize;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
@@ -79,6 +80,10 @@ ul {
 .modal h1, h3 {
   margin-top: 0;
   text-align: center;
+}
+
+.modal h1 {
+  text-transform: capitalize;
 }
 
 /* hide modal when is-visible class is removed by hideModal() */ 
