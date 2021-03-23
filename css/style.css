@@ -76,8 +76,9 @@ ul {
   text-decoration: underline;
 }
 
-.modal h1 {
+.modal h1, h3 {
   margin-top: 0;
+  text-align: center;
 }
 
 /* hide modal when is-visible class is removed by hideModal() */ 
