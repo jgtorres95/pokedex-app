@@ -28,3 +28,24 @@ body {
 ul {
     list-style-type: none;
 }
+
+#modal-container {
+  position: fixed;
+  padding: 20px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  
+  /* show it above other content */
+  z-index: 999; 
+  
+  /* allow scrolling if the screen is not high enough*/
+  overflow: auto; 
+  
+  /* center the modal */
+  display: grid;
+  text-align: center;
+}
