@@ -14,7 +14,8 @@ let pokemonRepository = (function(){
     // Function that calls loadDetails() and then calls showModal with name, height, and image passed as arguements
     function showDetails(pokemon){
         loadDetails(pokemon).then(function () {
-            console.log(pokemon);
+            // console.log(pokemon.name + pokemon.height);
+            showModal(pokemon.name, pokemon.height, pokemon.imageUrl);
         });
     }
     // Function that adds buttons as list items to '.pokemon-list' for each pokemon in pokemonList. 
