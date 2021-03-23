@@ -61,6 +61,36 @@ let pokemonRepository = (function(){
             console.error(e); 
         })
     }
+
+    let modalContainer = document.querySelector('#modal-container')
+    function showModal(name, height, image) {
+        modalContainer.innerHTML = '';
+        
+        let modal = document.createElement('div'); 
+        modal.classList.add('modal');
+
+        let closeButtonElement = document.createElement('button');
+        closeButtonElement.classList.add('modal-close');
+        closeButtonElement.innerText = 'Close'; 
+        closeButtonElement.addEventListener('click', hideModal);
+
+        let pokemonName = document.createElement('h1');
+        pokemonName.innerText = name;
+
+        let pokemonHeight = document.createElement('h3');
+        pokemonHeight.innerText = ('height: ' + height); 
+
+        let pokemonImage = document.createElement('img');
+        pokemonImage.src = image; 
+
+        modal.appendChild(closeButtonElement);
+        modal.appendChild(pokemonName);
+        modal.appendChild(pokemonHeight);
+        modal.appendChild(pokemonImage);
+        modalContainer.appendChild(modal); 
+
+        modalContainer.classList.add('is-visible'); 
+    }   
     //Return each function in pokemonRepository with newly created variables for each function defined above. 
     return {
         getAll: getAll,
