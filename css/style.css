@@ -75,3 +75,10 @@ ul {
 }
 
 /* hide modal when is-visible class is removed by hideModal() */ 
+#modal-container {
+  display: none;
+}
+
+#modal-container.is-visible {
+    display: block
+}
