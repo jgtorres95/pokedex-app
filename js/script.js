@@ -11,7 +11,7 @@ let pokemonRepository = (function(){
     function add(pokemon){
         pokemonList.push(pokemon);
     }
-    // Function that calls loadDetails() and then logs details for each pokemon to the console.
+    // Function that calls loadDetails() and then calls showModal with name, height, and image passed as arguements
     function showDetails(pokemon){
         loadDetails(pokemon).then(function () {
             console.log(pokemon);
