@@ -96,6 +96,21 @@ let pokemonRepository = (function(){
         modalContainer.classList.remove('is-visible');
     }  
 
+    // Event listener that will close pokemon modal if user hits esc
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
+            hideModal();
+        }
+    })
+
+    // Event listener that will close pokemon modal if the user clicks outside the modal
+    modalContainer.addEventListener('click', (e) => {
+        let target = e.target;
+        if (target === modalContainer) {
+            hideModal();
+        }
+    }) 
+
     //Return each function in pokemonRepository with newly created variables for each function defined above. 
     return {
         getAll: getAll,
