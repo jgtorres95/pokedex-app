@@ -3,6 +3,12 @@ body {
   font-family: Arial, sans-serif;
 }
 
+img {
+  width: 25%;
+  display: block;
+  margin: 0 auto;
+}
+
 .select-pokemon {
     background-color: #89CFF0;
     border: none;
