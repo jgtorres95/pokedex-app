@@ -91,6 +91,11 @@ let pokemonRepository = (function(){
 
         modalContainer.classList.add('is-visible'); 
     }   
+
+    function hideModal() {
+        modalContainer.classList.remove('is-visible');
+    }  
+
     //Return each function in pokemonRepository with newly created variables for each function defined above. 
     return {
         getAll: getAll,
