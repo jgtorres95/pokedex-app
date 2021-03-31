@@ -7,7 +7,7 @@ img {
   width: 25%;
   display: block;
   margin: 0 auto;
-}
+} 
 
 .select-pokemon {
     background-color: #89CFF0;
@@ -32,65 +32,4 @@ img {
     opacity: 0.8;
 }
 
-ul {
-    list-style-type: none;
-}
 
-#modal-container {
-  position: fixed;
-  padding: 20px;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  
-  /* show it above other content */
-  z-index: 999; 
-  
-  /* allow scrolling if the screen is not high enough*/
-  overflow: auto; 
-  
-  /* center the modal */
-  display: grid;
-  text-align: center;
-}
-
-.modal {
-  margin: auto;
-  display: inline-block;
-  box-sizing: border-box;
-  background: #fff;
-  padding: 15px;
-  width: 100%;
-  max-width: 700px;
-  text-align: left;
-}
-
-.modal-close {
-  float: right;
-  -webkit-appearance: none;
-  border: 0;
-  background: none;
-  color: #777;
-  text-decoration: underline;
-}
-
-.modal h1, h3 {
-  margin-top: 0;
-  text-align: center;
-}
-
-.modal h1 {
-  text-transform: capitalize;
-}
-
-/* hide modal when is-visible class is removed by hideModal() */ 
-#modal-container {
-  display: none;
-}
-
-#modal-container.is-visible {
-    display: block
-}
