@@ -123,6 +123,7 @@ let pokemonRepository = (function () {
     loadList: loadList,
     loadDetails: loadDetails,
     showModal: showModal,
+    pokemonSearch: pokemonSearch
   };
 })();
 
