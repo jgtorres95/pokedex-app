@@ -8,6 +8,10 @@ body {
   display: inline-block;
 }
 
+.btn { 
+  background-color: #1184e8;
+  text-transform: capitalize;
+  border: none; 
 }
 
 }
