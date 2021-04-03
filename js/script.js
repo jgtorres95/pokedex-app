@@ -91,10 +91,15 @@ let pokemonRepository = (function () {
     imageFront.attr('src', item.imageUrl);
     // Creating element for pokemon's height
     let heightElement = $('<p>Height: ' + item.height + '</p>');
+    // Creating element for pokemon's type(s)
+    let typeElement = $('<p>Type(s): ' + item.types + '</p>');
 
     modalTitle.append(nameElement);
     modalBody.append(imageFront);
     modalBody.append(heightElement);
+    modalBody.append(typeElement);
+  }
+
   // Search bar function
   }
 
