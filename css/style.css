@@ -3,6 +3,10 @@ body {
   text-align: center;
 }
 
+.list-group-item {
+  background-color: #D75B60;
+  display: inline-block;
+}
 
 }
 
