@@ -82,7 +82,7 @@ let pokemonRepository = (function () {
 
     // Clear existing content
     modalBody.empty();
-    modalTitle.empty();
+    modalTitle.empty(); 
 
     // Creating element for pokemon's name
     let nameElement = $('<h1>' + item.name + '</h1>');
