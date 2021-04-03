@@ -55,7 +55,7 @@ let pokemonRepository = (function () {
       });
   }
 
-  //Function that will fetch details and create new variables for the pokemon's image, height, and type.
+  //Function that will fetch details and create new variables for the pokemon's image, height, and type(s).
   function loadDetails(item) {
     let url = item.detailsUrl;
     return fetch(url)
@@ -72,7 +72,7 @@ let pokemonRepository = (function () {
       });
   }
 
-  // Function that will create elements for pokemon name, image, and height and then append to modal
+  // Function that will create elements for pokemon name, image, height, and type(s) and then append to modal
   function showModal(item) {
     let modalBody = $('.modal-body');
     let modalTitle = $('.modal-title');
@@ -92,6 +92,7 @@ let pokemonRepository = (function () {
     modalTitle.append(nameElement);
     modalBody.append(imageFront);
     modalBody.append(heightElement);
+  // Search bar function
   }
 
   //Return each function in pokemonRepository with newly created variables for each function defined above.
