@@ -12,6 +12,11 @@
     <body>
         <nav class="navbar navbar-light" style="background-color: #e5e672;">
             <a class="navbar-brand" href="index.html">Pokedex</a>
+            <div>
+                <input type="search" id="search-bar" name="search-bar" autocomplete="off" aria-label="Search bar" 
+                    class="form-control" placeholder="Search" oninput="pokemonRepository.pokemonSearch()">
+                </div>
+            </div>
         </nav>
         <ul class = "pokemon-list list-group"></ul>
        <div class="modal fade" id="pokemonModal" tabindex="-1" role="dialog" aria-labelledby="pokemonModalLabel" aria-hidden="true">
