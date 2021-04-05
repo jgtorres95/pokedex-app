@@ -7,11 +7,11 @@ let pokemonRepository = (function () {
   function getAll() {
     return pokemonList;
   }
-  // Function used to add new pokemon to pokemonList
+  // Function used to add new pokemon to pokemonList.
   function add(pokemon) {
     pokemonList.push(pokemon);
   }
-  // Function that calls loadDetails() and then calls showModal
+  // Function that calls loadDetails() and then calls showModal.
   function showDetails(pokemon) {
     loadDetails(pokemon).then(function () {
       showModal(pokemon);
@@ -75,7 +75,7 @@ let pokemonRepository = (function () {
       });
   }
 
-  // Function that will create elements for pokemon name, image, height, and type(s) and then append to modal
+  // Function that will create elements for pokemon name, image, height, and type(s) and then append to modal.
   function showModal(item) {
     let modalBody = $('.modal-body');
     let modalTitle = $('.modal-title');
