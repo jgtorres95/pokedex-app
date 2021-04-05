@@ -103,9 +103,9 @@ let pokemonRepository = (function () {
   // Search bar function
   function pokemonSearch() {
     let searchInput = document.querySelector('#search-bar').value.toUpperCase();
-    let fullList = document.querySelectorAll('.btn');
+    let pokemonButtons = document.querySelectorAll('.btn');
 
-    fullList.forEach(function (entry) {
+    pokemonButtons.forEach(function (entry) {
         if (entry.innerText.toUpperCase().indexOf(searchInput) > -1) {
             entry.style.display = '';
         } else {

@@ -9,8 +9,8 @@ body {
 }
 
 .btn { 
-  background-color: white;
-  color: black;
+  background-color: #FFFFFF;
+  color: #000000;
   text-transform: capitalize;
   border: none; 
 }
