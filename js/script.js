@@ -77,27 +77,35 @@ let pokemonRepository = (function () {
 
   // Function that will create elements for pokemon name, image, height, and type(s) and then append to modal.
   function showModal(item) {
-    let modalBody = $('.modal-body');
-    let modalTitle = $('.modal-title');
+    let modalBody = document.querySelector('.modal-body');
+    let modalTitle = document.querySelector('.modal-title');
 
     // Clear existing content
-    modalBody.empty();
-    modalTitle.empty(); 
+    modalBody.innerHTML = '';
+    modalTitle.innerHTML = '';
 
     // Creating element for pokemon's name
-    let nameElement = $('<h1>' + item.name + '</h1>');
-    // Creating element for pokemon's image
-    let imageFront = $('<img class="modal-image" style="width:50%">');
-    imageFront.attr('src', item.imageUrl);
-    // Creating element for pokemon's height
-    let heightElement = $('<p>Height: ' + item.height + '</p>');
-    // Creating element for pokemon's type(s)
-    let typeElement = $('<p>Type(s): ' + item.types + '</p>');
+    let nameElement = document.createElement('h1');
+    nameElement.innerText = item.name;
 
-    modalTitle.append(nameElement);
-    modalBody.append(imageFront);
-    modalBody.append(heightElement);
-    modalBody.append(typeElement);
+    // Creating element for pokemon's image
+    let imageFront = document.createElement('img');
+    imageFront.setAttribute('class', 'modal-image');
+    imageFront.setAttribute('style', 'width:50%');
+    imageFront.src = item.imageUrl;
+
+    // Creating element for pokemon's height
+    let heightElement = document.createElement('p');
+    heightElement.innerText = `Height: ${item.height}`;
+
+    // Creating element for pokemon's type(s)
+    let typeElement = document.createElement('p');
+    typeElement.innerText = `Type(s): ${item.types}`; 
+
+    modalTitle.appendChild(nameElement);
+    modalBody.appendChild(imageFront);
+    modalBody.appendChild(heightElement);
+    modalBody.appendChild(typeElement);
   }
 
   // Search bar function
