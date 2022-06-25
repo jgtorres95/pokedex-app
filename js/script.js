@@ -107,9 +107,9 @@ let pokemonRepository = (function () {
 
     pokemonButtons.forEach(function (entry) {
         if (entry.innerText.toUpperCase().indexOf(searchInput) > -1) {
-            entry.style.display = '';
+            entry.parentElement.style.display = '';
         } else {
-            entry.style.display = 'none';
+            entry.parentElement.style.display = 'none';
         }
     });
   }
