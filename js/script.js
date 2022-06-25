@@ -13,8 +13,8 @@ let pokemonRepository = (function () {
   }
   // Function that calls loadDetails() and then calls showModal.
   function showDetails(pokemon) {
-    loadDetails(pokemon).then(function () {
-      showModal(pokemon);
+    loadDetails(pokemon).then(function (pokemonDetails) {
+      showModal(pokemonDetails);
     });
   }
   // Function that adds buttons as list items to '.pokemon-list' for each pokemon in pokemonList.
@@ -63,12 +63,18 @@ let pokemonRepository = (function () {
         return response.json();
       })
       .then(function (details) {
-        item.imageUrl = details.sprites.front_default;
-        item.height = details.height;
-        item.types = [];
+        const pokemonDetails = {
+          name: item.name
+        };
+        pokemonDetails.imageUrl = details.sprites.front_default;
+        pokemonDetails.height = details.height;
+        pokemonDetails.types = [];
         details.types.forEach(function(itemType) {
-          item.types.push(itemType.type.name);
+          pokemonDetails.types.push(itemType.type.name);
         });
+
+        return pokemonDetails;
+
       })
       .catch(function (e) {
         console.error(e);
